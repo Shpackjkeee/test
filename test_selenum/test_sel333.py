@@ -2,6 +2,7 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+import pytest
 
 class TestAbs(unittest.TestCase):
     def test_abs1(self):
@@ -39,4 +40,4 @@ class TestAbs(unittest.TestCase):
         self.assertEqual("Congratulations! You have successfully registered!", welcome_text, msg="Errr")
 
 if __name__ == "__main__":
-    unittest.main()
+    pytest.main()
